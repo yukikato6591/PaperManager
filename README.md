@@ -55,7 +55,7 @@ DATABASE_ID = "あなたのデータベースID"
 
 ## Macでのアプリケーション化
 
-Automatorを用いることで、PaperManager.py をMacでダブルクリック実行できるアプリにできる。
+Automatorを用いることで、PaperManager.py をMacでダブルクリック実行できるアプリにできます。
 
 1. **Automator を起動**
    - Spotlight で「Automator」と検索して起動
@@ -67,7 +67,7 @@ Automatorを用いることで、PaperManager.py をMacでダブルクリック�
 
 3. **以下のようなスクリプトを入力（例：Conda環境使用時）**
 
-以下のコードは「PaperManager」というconda仮想環境を用いた場合である。
+以下のコードは「PaperManager」というconda仮想環境を用いた場合です。
 ```bash
 #!/bin/zsh
 source /Users/あなたのユーザー名/anaconda3/bin/activate PaperManager
