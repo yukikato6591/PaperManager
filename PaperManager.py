@@ -2,6 +2,10 @@ import tkinter as tk
 import requests
 import bibtexparser
 from datetime import datetime
+import os
+from dotenv import load_dotenv
+# .envファイルを読み込む
+load_dotenv()
 
 def process_doi(doi_url):
     prefix = "https://doi.org/"
@@ -13,8 +17,10 @@ def process_doi(doi_url):
 def Notion_Bib(doi):
     return_text = "状態："
     # ここに自分の情報を入れる
-    NOTION_TOKEN = ""
-    DATABASE_ID = ""
+    NOTION_TOKEN = os.getenv("NOTION_TOKEN")
+    DATABASE_ID = os.getenv("DATABASE_ID")
+
+    print(NOTION_TOKEN)
 
     # DOIからBibTeXを取得
     bibtex_url = f"https://doi.org/{doi}"
